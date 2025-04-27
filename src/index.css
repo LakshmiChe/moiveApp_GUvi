@@ -1,0 +1,152 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 1rem 0;
+}
+
+.error {
+  color: red;
+  text-align: center;
+}
+.home-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.home-page div {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+.home-page input[type="text"] {
+  padding: 0.8rem;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 0.5rem;
+  font-size: 1rem;
+}
+
+.home-page button {
+  padding: 0.8rem 1.2rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.home-page button:hover {
+  background-color: #0056b3;
+}
+
+.home-page select {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin: 8px;
+}
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+.movie-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.movie-card:hover {
+  transform: translateY(-5px);
+}
+
+.movie-card img {
+  width: 100%;
+  height: auto;
+}
+
+.movie-card h3 {
+  font-size: 1.2rem;
+  margin: 0.8rem 0;
+}
+
+.movie-card p {
+  font-size: 0.9rem;
+  color: #555;
+  padding: 0 0.5rem 1rem;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.pagination button {
+  padding: 0.5rem 1rem;
+  margin: 0 0.2rem;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.pagination button:disabled {
+  background: #ddd;
+  cursor: not-allowed;
+}
+
+.pagination button:hover:not(:disabled) {
+  background: #0056b3;
+}
+.movie-details {
+  max-width: 800px;
+  margin: 2rem auto;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+}
+
+.movie-details img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.movie-details h1 {
+  margin: 1rem 0;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.movie-details p {
+  margin: 0.5rem 0;
+  line-height: 1.5;
+}
+
+.movie-details ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.movie-details ul li {
+  margin: 0.3rem 0;
+}
